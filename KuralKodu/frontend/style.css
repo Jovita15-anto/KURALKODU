@@ -1,0 +1,391 @@
+/* GLOBAL */
+
+html {
+    font-size: 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Segoe UI, sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 100px;
+    background: #020617;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #f97316;
+}
+
+.nav-links a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #f97316;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url("https://images.unsplash.com/photo-1521791136064-7986c2920216");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero div {
+    max-width: 1200px;
+}
+
+.hero h1 {
+    font-size: 85px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #e2e8f0;
+}
+
+
+/* BUTTONS */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.btn {
+    padding: 22px 50px;
+    background: #f97316;
+    border: none;
+    color: white;
+    font-size: 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #ea580c;
+}
+
+
+/* REPORT PAGE */
+
+/* REPORT PAGE */
+/* REPORT PAGE CENTERED LIKE TRACK */
+
+.report-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.report-container h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.report-container select,
+.report-container textarea,
+.report-container input {
+    width: 420px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.report-container textarea {
+    height: 120px;
+}
+
+.report-container button {
+    width: 420px;
+    padding: 15px;
+    font-size: 18px;
+    background: #f97316;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.report-container button:hover {
+    background: #ea580c;
+}
+
+/* FORM LAYOUT */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 600px;
+}
+
+.form-row select,
+.form-row textarea {
+    padding: 15px;
+    border-radius: 6px;
+    border: none;
+    font-size: 18px;
+}
+
+.form-row textarea {
+    height: 100px;
+}
+
+form input {
+    width: 400px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 15px 40px;
+    font-size: 18px;
+    background: #f97316;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #ea580c;
+}
+
+
+/* TRACK PAGE */
+
+.track-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.track-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.track-container h1 {
+    font-size: 60px;
+}
+
+.track-container p {
+    font-size: 24px;
+}
+
+.track-container input {
+    width: 400px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 6px;
+    border: none;
+}
+
+.track-container button {
+    padding: 15px 35px;
+    font-size: 18px;
+    background: #f97316;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.track-container button:hover {
+    background: #ea580c;
+}
+
+#statusBox {
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+
+/* ADMIN PAGE */
+
+.admin-container {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.admin-title {
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+/* LOAD BUTTON */
+
+#loadBtn {
+    padding: 16px 40px;
+    font-size: 20px;
+    background: #f97316;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+#loadBtn:hover {
+    background: #ea580c;
+}
+
+/* TABLE */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #1e293b;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background: #020617;
+    padding: 18px;
+    font-size: 20px;
+}
+
+td {
+    padding: 18px;
+    font-size: 18px;
+}
+
+tr:nth-child(even) {
+    background: #334155;
+}
+
+/* RESOLVE BUTTON */
+
+.resolve-btn {
+    background: #22c55e;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.resolve-btn:hover {
+    background: #16a34a;
+}
+
+/* =========================
+   COMPLAINT LIST TABLE
+========================= */
+
+.complaint-table {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background: #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.complaint-table th {
+    background: #020617;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.complaint-table td {
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.complaint-table tr:nth-child(even) {
+    background: #334155;
+}
+
+.cid {
+    font-family: monospace;
+    color: #f97316;
+}
+
+.track-btn {
+    padding: 8px 16px;
+    background: #f97316;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.track-btn:hover {
+    background: #ea580c;
+}
+
+/* OTHER CATEGORY INPUT */
+
+#otherCategory {
+    width: 400px;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    background: #e6e6e6;
+    color: black;
+}
