@@ -1,3 +1,4 @@
+require("dotenv").config();
 const multer = require("multer");
 const express = require("express");
 const mongoose = require("mongoose");
@@ -20,7 +21,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/uploads", express.static("uploads"));
 
-mongoose.connect("mongodb://127.0.0.1:27017/kuralKodu")
+mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log("MongoDB Connected"))
     .catch(err => console.log(err));
 
