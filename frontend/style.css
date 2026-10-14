@@ -1,0 +1,533 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #020617;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #f97316;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #f97316;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url("https://images.unsplash.com/photo-1521791136064-7986c2920216");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero div {
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 35px;
+    color: #e2e8f0;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 35px;
+    background: #f97316;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #ea580c;
+}
+
+
+/* =========================
+   REPORT PAGE
+========================= */
+
+.report-container {
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.report-container h1 {
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+
+.report-container form {
+    width: 100%;
+    max-width: 550px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.report-container select,
+.report-container textarea,
+.report-container input[type="text"] {
+    width: 100%;
+    padding: 14px;
+
+    font-size: 17px;
+
+    border-radius: 8px;
+    border: none;
+    outline: none;
+
+    background: #e5e7eb;
+    color: #111827;
+}
+
+.report-container select {
+    cursor: pointer;
+}
+
+.report-container textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+.report-container input[type="file"] {
+    width: 100%;
+    color: white;
+    font-size: 16px;
+}
+
+.report-container button {
+    width: 100%;
+    padding: 15px;
+
+    font-size: 18px;
+
+    background: #f97316;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.report-container button:hover {
+    background: #ea580c;
+}
+
+#locationText {
+    font-size: 18px;
+    color: #e2e8f0;
+    margin: 5px 0;
+}
+
+
+/* =========================
+   OTHER CATEGORY
+========================= */
+
+#otherCategory {
+    width: 100%;
+    padding: 14px;
+
+    border-radius: 8px;
+    border: none;
+    outline: none;
+
+    font-size: 17px;
+
+    background: #e5e7eb;
+    color: #111827;
+}
+
+
+/* =========================
+   TRACK PAGE
+========================= */
+
+.track-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.track-container {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.track-container h1 {
+    font-size: 42px;
+}
+
+.track-container p {
+    font-size: 20px;
+}
+
+.track-container input {
+    width: 450px;
+    max-width: 100%;
+
+    padding: 14px;
+
+    font-size: 17px;
+
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.track-container button {
+    padding: 14px 35px;
+
+    font-size: 18px;
+
+    background: #f97316;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.track-container button:hover {
+    background: #ea580c;
+}
+
+#statusBox {
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+
+/* =========================
+   ADMIN PAGE
+========================= */
+
+.admin-container {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 60px auto;
+
+    text-align: center;
+}
+
+.admin-title {
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   LOAD BUTTON
+========================= */
+
+#loadBtn,
+.admin-container>button {
+    padding: 14px 30px;
+
+    font-size: 17px;
+
+    background: #f97316;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    margin-bottom: 30px;
+}
+
+#loadBtn:hover,
+.admin-container>button:hover {
+    background: #ea580c;
+}
+
+
+/* =========================
+   ADMIN TABLE
+========================= */
+
+.admin-container table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: #1e293b;
+
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.admin-container th {
+    background: #020617;
+
+    padding: 16px;
+
+    font-size: 17px;
+}
+
+.admin-container td {
+    padding: 16px;
+
+    font-size: 16px;
+
+    border-bottom: 1px solid #475569;
+}
+
+.admin-container tr:nth-child(even) {
+    background: #334155;
+}
+
+
+/* =========================
+   RESOLVE BUTTON
+========================= */
+
+.resolve-btn {
+    background: #22c55e;
+
+    padding: 9px 18px;
+
+    border: none;
+    border-radius: 6px;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+.resolve-btn:hover {
+    background: #16a34a;
+}
+
+
+/* =========================
+   COMPLAINT TABLE
+========================= */
+
+.complaint-table {
+    width: 100%;
+    max-width: 800px;
+
+    margin: 30px auto;
+
+    border-collapse: collapse;
+
+    background: #1e293b;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.complaint-table th {
+    background: #020617;
+    padding: 15px;
+    font-size: 17px;
+}
+
+.complaint-table td {
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.complaint-table tr:nth-child(even) {
+    background: #334155;
+}
+
+
+/* =========================
+   COMPLAINT ID
+========================= */
+
+.cid {
+    font-family: monospace;
+    color: #f97316;
+}
+
+
+/* =========================
+   TRACK BUTTON
+========================= */
+
+.track-btn {
+    padding: 8px 16px;
+
+    background: #f97316;
+
+    border: none;
+    color: white;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.track-btn:hover {
+    background: #ea580c;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 220px;
+    }
+
+    .report-container h1,
+    .track-container h1,
+    .admin-title {
+        font-size: 32px;
+    }
+
+    .admin-container {
+        width: 95%;
+        padding: 10px;
+        overflow-x: auto;
+    }
+
+    .admin-container table {
+        min-width: 700px;
+    }
+}
+
+
+/* Add space at the bottom of the report page */
+body {
+    padding-bottom: 40px;
+}

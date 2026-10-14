@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>KuralKodu - Track Complaint</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="track-page">
+
+    <!-- NAVBAR -->
+
+    <div class="navbar">
+
+        <div class="logo">KuralKodu</div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+            <a href="report.html">Report</a>
+            <a href="admin.html">Admin</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- TRACK SECTION -->
+
+    <div class="track-container">
+
+        <h1>Track Your Complaint</h1>
+
+        <p>Enter your Complaint ID to check the status</p>
+
+        <input type="text" id="complaintId" placeholder="Enter Complaint ID">
+
+        <button onclick="trackComplaint()">Track Complaint</button>
+
+        <!-- USER COMPLAINT LIST -->
+        <div id="myComplaints"></div>
+
+        <!-- STATUS DISPLAY -->
+        <div id="statusBox"></div>
+
+    </div>
+
+
+    <!-- LOAD MAIN SCRIPT -->
+    <script src="script.js"></script>
+
+    <script>
+        loadMyComplaints();
+    </script>
+
+</body>
+
+</html>
