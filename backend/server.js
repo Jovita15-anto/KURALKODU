@@ -22,13 +22,10 @@ app.use(cors());
 app.use(express.json());
 app.use("/uploads", express.static("uploads"));
 
-/* ================= MONGODB ================= */
-
 
 mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log("MongoDB Atlas Connected"))
     .catch(err => console.error("MongoDB connection failed:", err.message));
-
 
 const Complaint = require("./models/Complaint");
 
@@ -94,6 +91,8 @@ app.put("/update/:id", async (req, res) => {
 
 });
 
-app.listen(3000, () => {
-    console.log("Server running on port 3000");
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 });
